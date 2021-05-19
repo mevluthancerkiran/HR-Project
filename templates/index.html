@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Keyword-Based Profile Search </title>
+
+
+</head>
+<body>
+    <h2>Keyword-Based Profile Search </h2>
+
+    <h3>Keyword-Based Profile Search </h3>
+    <br>
+    <form method="post" enctype="multipart/form-data" action="the_func">
+        {% csrf_token %}
+        <div class="col-md-4 col-sm-4"><label for="ed1">Education:</label></div> <input name="ed1" type="text" value="bogazici university"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="exp1">Experience:</label></div> <input name="exp1" type="text" value="data scientist"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="pn1">Page Number:</label></div> <input name="pn1" type="text" value=1><br><br>
+        <div class="col-md-4 col-sm-4"><label for="excomp1">Ex-Company:</label></div> <input name="excomp1" type="text" value="getir"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="skill1">Skill:</label></div> <input name="skill1" type="text" value="python"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="lang1">Language:</label></div> <input name="lang1" type="text" value="english"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="loc1">Location:</label></div> <input name="loc1" type="text" value="istanbul"><br><br>
+        <br>
+
+        <input type="submit" value="Submit" ></div>
+    </form>
+
+</body>
+
+
+
+
+</html>
