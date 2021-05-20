@@ -20,5 +20,5 @@ def the_func(request):
     loc1 = request.POST.get("loc1")
 
     the_df = get_cands(ed1, exp1, excomp1, skill1, skill1, lang1, loc1, pn1)
-
+    the_df.index += 1
     return HttpResponse(the_df.to_html())

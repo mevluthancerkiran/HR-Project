@@ -4,6 +4,7 @@ def get_cands(kw1="data scientist", kw2="istanbul",kw3 = "", kw4="", kw5="", kw6
     from selenium.webdriver.common.keys import Keys
     from time import sleep
     import pandas as pd
+    from selenium.webdriver.chrome.options import Options
 
     newdf = pd.DataFrame(columns=["Name",
                                   "User Profile",
@@ -31,7 +32,9 @@ def get_cands(kw1="data scientist", kw2="istanbul",kw3 = "", kw4="", kw5="", kw6
                                   "Certification 2",
                                   "Certification 3"])
 
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(options=options)
     driver.get('https://www.linkedin.com')
     username = driver.find_element_by_class_name('input__input')
     username.send_keys(mail1)
